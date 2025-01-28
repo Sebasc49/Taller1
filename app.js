@@ -18,6 +18,9 @@ app.use(cors());
 app.use(express.json());
 app.use('/usuarios', usersRouter);
 app.use('/iniciarSesion', loginRouter);
+app.get('/', (req, res)=>{
+    res.send('Backed funcionando correctamente');
+});
 
 
 
